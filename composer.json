@@ -1,0 +1,21 @@
+{
+  "name": "john/wp-courses-lite",
+  "description": "Lightweight courses plugin with WooCommerce enrollment integration.",
+  "type": "wordpress-plugin",
+  "require": {
+    "php": "^8.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "WCL\\": "src/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11.0",
+    "pestphp/pest": "^2.0"
+  },
+  "scripts": {
+    "post-autoload-dump": "php -r \"echo 'Autoload ready' . PHP_EOL;\"",
+    "test": "vendor/bin/pest"
+  }
+}
